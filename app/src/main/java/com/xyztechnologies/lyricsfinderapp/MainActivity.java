@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         edtArtistName = findViewById(R.id.edtArtistName);
         edtSongName  = findViewById(R.id.edtSongName);
         txtLyrics = findViewById(R.id.txtLyrics);
@@ -66,7 +67,8 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onErrorResponse(VolleyError error) {
 
-                                Toast.makeText(MainActivity.this,"Invalid Artist_Name or Song_Name: "+error.getMessage(),Toast.LENGTH_LONG).show();
+                                Toast.makeText(MainActivity.this,"Invalid Artist_Name or Song_Name: "
+                                        +error.getMessage(),Toast.LENGTH_LONG).show();
                             }
                         });
 

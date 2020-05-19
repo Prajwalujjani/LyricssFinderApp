@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-
+    tools:context=".MainActivity"
+    android:background="#ff6600">
 
 
 
@@ -24,7 +23,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="please enter the artist name... "
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:layout_margin="8dp"/>
 
         <EditText
             android:id="@+id/edtSongName"
@@ -32,12 +32,15 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="please enter the song name..."
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:layout_margin="5dp"/>
 
         <Button
             android:id="@+id/btnGetLyrics"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#de3163"
             android:text="give me the lyrics of this song" />
 
     </LinearLayout>
@@ -51,15 +54,18 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_margin="5dp">
 
         <TextView
             android:id="@+id/txtLyrics"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:textColor="#FF5722"
-            android:textSize="24sp" />
+            android:textColor="#FFFAFA"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_margin="8dp"/>
 
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
